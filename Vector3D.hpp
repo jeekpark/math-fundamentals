@@ -95,3 +95,8 @@ inline Vector3D Normalize(const Vector3D& v)
 {
   return (v / Magnitude(v));
 }
+
+inline float Dot(const Vector3D& a, const Vector3D& b)
+{
+  return (a.x * b.x + a.y * b.y + a.z * b.z);
+}
